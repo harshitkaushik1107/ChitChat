@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_shadow_end_color"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/white"
+        android:gravity="right">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_bold"
+            android:text="ChitChat"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_22sdp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/logutimg"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/logout" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mainUserRecyclerView"
+        android:layout_width="388dp"
+        android:layout_height="542dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="107dp" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/camerabtn"-->
+<!--        android:layout_width="47dp"-->
+<!--        android:layout_height="38dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="105dp"-->
+<!--        android:layout_marginEnd="241dp"-->
+<!--        android:layout_marginRight="244dp"-->
+<!--        android:layout_marginBottom="44dp"-->
+<!--        android:src="@drawable/camera" />-->
+
+    <ImageView
+        android:id="@+id/settingbtn"
+        android:layout_width="47dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="249dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginRight="244dp"
+        android:layout_marginBottom="43dp"
+        android:src="@drawable/sett" />
+
+    <ImageView
+        android:id="@+id/deletebtn"
+        android:layout_width="47dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="177dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginRight="244dp"
+        android:layout_marginBottom="42dp"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <ImageView
+        android:id="@+id/camerabtn"
+        android:layout_width="47dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginEnd="243dp"
+        android:layout_marginRight="244dp"
+        android:layout_marginBottom="41dp"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+    />
+
+
+</RelativeLayout>
